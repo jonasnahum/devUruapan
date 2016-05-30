@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,48 +12,12 @@
     <link href="stylesheets/workaround.css" rel="stylesheet">
      <!-- Custom styles for this template -->
     <link href="stylesheets/carousel.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
   </head>
   <body>
-    <div class="navbar-wrapper">
-      <div class="container">
-
-        <nav class="navbar navbar-inverse navbar-static-top">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">UruapanWeb</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li class="dropdown-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-
+      <div ng-view>
       </div>
-    </div>
-
-
+      
     <!-- Carousel
     ================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -63,33 +27,34 @@
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
       </ol>
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+      <div class="carousel-inner" role="listbox" >
+        <div class="item active" style="background:#2A83A6" >
+            <div class="container">
+                <div class="page-header">
+                  <h1 style="color: white; font-size: 8em;">UruapanWeb </h1>
+                  
+                </div>
+                <p style="color: #b3e3e7; font-size: 2em;" >nuestro trabajo es ahorrar tiempo para que usted gane más dinero</p>
+            </div>
+        </div>
+        <div class="item" style="background:#2A83A6">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Diseño de páginas web</h1>
-              <p>Nos encargamos de que usted tenga una página web publicitaria para que todo mundo pueda conocer su negocio.</p>
+              <h1 style="font-size: 4em;">Progamas administrativos</h1>
             </div>
           </div>
         </div>
-        <div class="item">
-          <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+        <div class="item" style="background:#2A83A6">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Progamas administrativos</h1>
-              <p>Ahorre dinero haciendo más ágiles los procesos informáticos dentro de su empresa.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+              <h1 style="font-size: 4em;">Base de datos</h1>
             </div>
           </div>
         </div>
-        <div class="item">
-          <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+        <div class="item" style="background:#2A83A6">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Base de datos</h1>
-              <p>Recoga información de su cliente o su empresa desde cualquier parte del mundo y guárdela de forma segura.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+              <h1 style="font-size: 4em;">Diseño de páginas web</h1>
             </div>
           </div>
         </div>
@@ -111,66 +76,41 @@
 
     <div class="container marketing">
 
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>Diseño de páginas web</h2>
-          <p>Su página web debe tener un estilo actual que vaya acorde con la imágen que su empresa proyecta, a través de su página web, su cliente podra conocer su dirección exacta, contactalo en forma fácil y conocer los servicios o productos que usted ofrece. Además, Su página web tendrá el dato de cuántas personas consultan su página y concentrará links a redes sociales u otras páginas que usted tenga.</p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>Progamas administrativos</h2>
-          <p>Nuestro negocio es que su empresa gane más dinero.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
+  
 
 
       <!-- START THE FEATURETTES -->
 
       <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-      </div>
-
+          <div class="row featurette">
+            <div class="col-md-7 col-md-push-5">
+              <h2 class="featurette-heading">Programas administrativos</h2>
+              <p class="lead">Ahorre dinero haciendo más ágiles los procesos informáticos dentro de su empresa. Tal vez usted ha pensado que se podría ahorrar tiempo en la organización de los datos de su empresa, y que además el personal debería trabajar en aquello que a usted le hace obtener mayores ingresos.</p>
+            </div>
+            <div class="col-md-5 col-md-pull-7">
+              <img class="featurette-image img-responsive center-block" src="https://www.adictosaltrabajo.com/wp-content/uploads/2015/07/angularjs-form-controls-validation_00.png" alt="Generic placeholder image">
+            </div>
+          </div> 
       <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-      </div>
-
+          <div class="row featurette">
+            <div class="col-md-7">
+              <h2 class="featurette-heading">Diseño de <span class="text-muted">páginas web.</span></h2>
+              <p class="lead">Su página web debe tener un estilo actual que vaya acorde con la imágen que su empresa proyecta, a través de su página web, su cliente podra conocer su dirección exacta, contactarlo en forma fácil y conocer los servicios o productos que usted ofrece. Además, su página web sería visible en otros dispositivos como tablets o celulares.</p>
+            </div>
+            <div class="col-md-5">
+              <img class="featurette-image img-responsive center-block" src="https://shapebootstrap.net/media/com_product/products/thumb/1524966/thumbnail.png" alt="Generic placeholder image">
+            </div>
+          </div>
       <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-      </div>
-
+          <div class="row featurette">
+            <div class="col-md-7 col-md-push-5">
+              <h2 class="featurette-heading">Bases de datos</h2>
+              <p class="lead"> Capture información de su cliente o su empresa desde cualquier parte del mundo y guárdela de forma segura para después acceder a ella fácilmente. Es muy importante que sus datos estén protegidos para conservar la privacidad de sus clentes, y también, que se encuentren debidamente respaldados para asegurar que la información impornante nunca se pierda. La báse de datos debe tener la capacidad de crecer a la medida en que su negocio se desarrolla en un mundo globalizado.</p>
+            </div>
+            <div class="col-md-5 col-md-pull-7">
+              <img class="featurette-image img-responsive center-block" src="http://previews.123rf.com/images/limbi007/limbi0071305/limbi007130500150/19890965-Computadoras-port-tiles-conectadas-con-la-base-de-datos-sobre-el-fondo-blanco--Foto-de-archivo.jpg" alt="Generic placeholder image">
+            </div>
+          </div> 
       <hr class="featurette-divider">
 
       <!-- /END THE FEATURETTES -->
@@ -178,8 +118,8 @@
 
       <!-- FOOTER -->
       <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2015 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p class="pull-right"><a href="#">Ir arriba</a></p>
+        <p>&copy; 2016 UruapanWeb.</p>
       </footer>
 
     </div><!-- /.container -->
@@ -191,5 +131,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="bootstrap/workaround.js"></script>
+      
+    
+    <script src="angular/src/app.js"></script>  
   </body>
 </html>
