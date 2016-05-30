@@ -20,7 +20,7 @@
   <body>
       <div ng-view="angularViews">
       </div>
-   
+   <input type="hidden" id="hidServer" value="<%= serverInfo.server %>" />
       
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -31,6 +31,8 @@
     <script src="bootstrap/workaround.js"></script>
 
     
-    <script src="angular/src/app.js"></script>  
+    <script src="angular/src/app.js"></script>
+    <script async src="angular/src/correoController.js"></script>
+    <script src="angular/src/constants.js"></script>
   </body>
 </html>

@@ -1,7 +1,9 @@
  <!-- Carousel
     ================================================== -->
+
+<!--
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
+        
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -53,11 +55,24 @@
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
+   <!-- Intro Header -->
+    <header class="intro"  style="background:#2A83A6; height: 47em;">
+           <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div style="padding-top: 10em;">
+                       <div class="page-header">
+                          <h1 style="color: white; font-size: 8em;">Uruapan Web </h1>
+                       </div>
+                       <p style="color: #b3e3e7; font-size: 2em;" >nuestro trabajo es ahorrar tiempo para que usted gane más dinero</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+    </header>
+
 
     <div class="container marketing">
-
-  
-
 
       <!-- START THE FEATURETTES -->
 
@@ -92,9 +107,71 @@
             </div>
           </div> 
       <hr class="featurette-divider">
-
       <!-- /END THE FEATURETTES -->
+        
+      <!-- CORREO -->    
+      <div id="containerIn">
+        <div class="row">
+            <div class="scrollblock block-info" style="color: {{ctrl.colorText || 'black'}}; background-color: {{ctrl.colorBackground || 'white'}}">
+                 <h2 class="featurette-heading">Enviar mensaje</h2> 
+                <br /><br />
+                <div class="col-md-12" ng-controller="EmailFormController as emCtl">
+                    <p>Contacto :  Jonás Nahúm Jiménez García</p> <br />
+                    <p>Cel :  452 165 22 47</p> <br />
+                    <p>Uruapan Michoacan México</p> <br />
+                    <p><a href="https://www.facebook.com/paginasweburuapan">Facebook</a></p> <br /><br />
+                    <form name="mailForm" id="myForm" ng-submit="mailForm.$valid && emCtl.send()" novalidate>
+                        <fieldset ng-attr-disabled="{{emCtl.waiting || undefined}}">
+                            <div class="form-group">
+                                <label>Mi Nombre</label>
+                                <input type="text" class="form-control" name="name" placeholder="Nombre"
+                                       ng-model="emCtl.name" required />    
 
+                                <div class="errorMessages" ng-messages="mailForm.name.$error" 
+                                     ng-if="(!mailForm.name.$pristine || mailForm.$submitted)" >
+                                    <div ng-messages-include="/error/messages.html"></div>
+                                </div>                                    
+                            </div>
+                            <div class="form-group">
+                                <label>Mi Correo</label>
+                                <input type="email" class="form-control" name="email" placeholder="Email"
+                                       ng-model="emCtl.email" required />
+                                <div class="errorMessages" ng-messages="mailForm.email.$error" 
+                                     ng-if="(!mailForm.email.$pristine || mailForm.$submitted)">
+                                    <div ng-messages-include="/error/messages.html"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Mi Teléfono</label>
+                                <input type="text" class="form-control" name="phone" placeholder="Teléfono"
+                                       ng-model="emCtl.phone" ng-minlength="5" ng-maxlength="15" ng-pattern="/^[0-9]+$/"/>
+                                <div class="errorMessages" ng-messages="mailForm.phone.$error" 
+                                     ng-if="!mailForm.phone.$pristine || mailForm.$submitted">
+                                    <div ng-messages-include="/error/messages.html"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Mi Mensaje</label>
+                                <textarea class="form-control" name="message" placeholder="Mensaje"
+                                          ng-model="emCtl.message" required ></textarea>
+                                <div class="errorMessages" ng-messages="mailForm.message.$error" 
+                                     ng-if="(!mailForm.message.$pristine || mailForm.$submitted)" >
+                                    <div ng-messages-include="/error/messages.html"></div>
+                                </div>
+                            </div>
+
+                            <div class="text-right" >
+                                <button type="submit" class="btn btn-primary">Enviar Correo</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-- CORREO -->
+    
+  
 
       <!-- FOOTER -->
       <footer>
