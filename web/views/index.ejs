@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="app">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,117 +12,15 @@
     <link href="stylesheets/workaround.css" rel="stylesheet">
      <!-- Custom styles for this template -->
     <link href="stylesheets/carousel.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+          
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
+    <script src="angular/bin/angular-route.js"></script>
+
   </head>
   <body>
-      <div ng-view>
+      <div ng-view="angularViews">
       </div>
-      
-    <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox" >
-        <div class="item active" style="background:#2A83A6" >
-            <div class="container">
-                <div class="page-header">
-                  <h1 style="color: white; font-size: 8em;">UruapanWeb </h1>
-                  
-                </div>
-                <p style="color: #b3e3e7; font-size: 2em;" >nuestro trabajo es ahorrar tiempo para que usted gane más dinero</p>
-            </div>
-        </div>
-        <div class="item" style="background:#2A83A6">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1 style="font-size: 4em;">Progamas administrativos</h1>
-            </div>
-          </div>
-        </div>
-        <div class="item" style="background:#2A83A6">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1 style="font-size: 4em;">Base de datos</h1>
-            </div>
-          </div>
-        </div>
-        <div class="item" style="background:#2A83A6">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1 style="font-size: 4em;">Diseño de páginas web</h1>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div><!-- /.carousel -->
-
-
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container marketing">
-
-  
-
-
-      <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider">
-          <div class="row featurette">
-            <div class="col-md-7 col-md-push-5">
-              <h2 class="featurette-heading">Programas administrativos</h2>
-              <p class="lead">Ahorre dinero haciendo más ágiles los procesos informáticos dentro de su empresa. Tal vez usted ha pensado que se podría ahorrar tiempo en la organización de los datos de su empresa, y que además el personal debería trabajar en aquello que a usted le hace obtener mayores ingresos.</p>
-            </div>
-            <div class="col-md-5 col-md-pull-7">
-              <img class="featurette-image img-responsive center-block" src="https://www.adictosaltrabajo.com/wp-content/uploads/2015/07/angularjs-form-controls-validation_00.png" alt="Generic placeholder image">
-            </div>
-          </div> 
-      <hr class="featurette-divider">
-          <div class="row featurette">
-            <div class="col-md-7">
-              <h2 class="featurette-heading">Diseño de <span class="text-muted">páginas web.</span></h2>
-              <p class="lead">Su página web debe tener un estilo actual que vaya acorde con la imágen que su empresa proyecta, a través de su página web, su cliente podra conocer su dirección exacta, contactarlo en forma fácil y conocer los servicios o productos que usted ofrece. Además, su página web sería visible en otros dispositivos como tablets o celulares.</p>
-            </div>
-            <div class="col-md-5">
-              <img class="featurette-image img-responsive center-block" src="https://shapebootstrap.net/media/com_product/products/thumb/1524966/thumbnail.png" alt="Generic placeholder image">
-            </div>
-          </div>
-      <hr class="featurette-divider">
-          <div class="row featurette">
-            <div class="col-md-7 col-md-push-5">
-              <h2 class="featurette-heading">Bases de datos</h2>
-              <p class="lead"> Capture información de su cliente o su empresa desde cualquier parte del mundo y guárdela de forma segura para después acceder a ella fácilmente. Es muy importante que sus datos estén protegidos para conservar la privacidad de sus clentes, y también, que se encuentren debidamente respaldados para asegurar que la información impornante nunca se pierda. La báse de datos debe tener la capacidad de crecer a la medida en que su negocio se desarrolla en un mundo globalizado.</p>
-            </div>
-            <div class="col-md-5 col-md-pull-7">
-              <img class="featurette-image img-responsive center-block" src="http://previews.123rf.com/images/limbi007/limbi0071305/limbi007130500150/19890965-Computadoras-port-tiles-conectadas-con-la-base-de-datos-sobre-el-fondo-blanco--Foto-de-archivo.jpg" alt="Generic placeholder image">
-            </div>
-          </div> 
-      <hr class="featurette-divider">
-
-      <!-- /END THE FEATURETTES -->
-
-
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Ir arriba</a></p>
-        <p>&copy; 2016 UruapanWeb.</p>
-      </footer>
-
-    </div><!-- /.container -->
+   
       
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -131,7 +29,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="bootstrap/workaround.js"></script>
-      
+
     
     <script src="angular/src/app.js"></script>  
   </body>
