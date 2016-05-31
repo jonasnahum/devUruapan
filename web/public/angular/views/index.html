@@ -56,20 +56,21 @@
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
    <!-- Intro Header -->
-    <header class="intro"  style="background:#2A83A6; height: 47em;">
+    <!--<header class="intro"  style="background:#2A83A6; height: 47em;">-->
+    <div class="intro"  style="background-image: url('https://almacenesfreigenedo.com/image/cache/data/loneta-turquesa149-1300x867.jpg'); height: 53em; width: 120em; margin-top: -6em; margin-left: -4em; padding-top: 4em;">
            <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <div style="padding-top: 10em;">
                        <div class="page-header">
-                          <h1 style="color: white; font-size: 8em;">Uruapan Web </h1>
+                          <h1 style="color:  white;font-size: 8em;">Uruapan Web </h1>
                        </div>
-                       <p style="color: #b3e3e7; font-size: 2em;" >nuestro trabajo es ahorrar tiempo para que usted gane más dinero</p>
+                            <p style="color: white; font-size: 1.7em;" >nuestro trabajo es ahorrar tiempo para que usted gane más dinero</p>
                             </div>
                     </div>
                 </div>
             </div>
-    </header>
+    </div>
 
 
     <div class="container marketing">
@@ -90,7 +91,7 @@
           <div class="row featurette">
             <div class="col-md-7">
               <h2 class="featurette-heading">Diseño de <span class="text-muted">páginas web.</span></h2>
-              <p class="lead">Su página web debe tener un estilo actual que vaya acorde con la imágen que su empresa proyecta, a través de su página web, su cliente podra conocer su dirección exacta, contactarlo en forma fácil y conocer los servicios o productos que usted ofrece. Además, su página web sería visible en otros dispositivos como tablets o celulares.</p>
+              <p class="lead">Su página web debe tener un estilo actual que vaya acorde con la imagen que su empresa proyecta, a través de su página web, su cliente podrá conocer su dirección exacta, contactarlo en forma fácil y conocer los servicios o productos que usted ofrece. Además, su página web sería visible en otros dispositivos como tabletas o celulares.</p>
             </div>
             <div class="col-md-5">
               <img class="featurette-image img-responsive center-block" src="https://shapebootstrap.net/media/com_product/products/thumb/1524966/thumbnail.png" alt="Generic placeholder image">
@@ -100,7 +101,7 @@
           <div class="row featurette">
             <div class="col-md-7 col-md-push-5">
               <h2 class="featurette-heading">Bases de datos</h2>
-              <p class="lead"> Capture información de su cliente o su empresa desde cualquier parte del mundo y guárdela de forma segura para después acceder a ella fácilmente. Es muy importante que sus datos estén protegidos para conservar la privacidad de sus clentes, y también, que se encuentren debidamente respaldados para asegurar que la información impornante nunca se pierda. La báse de datos debe tener la capacidad de crecer a la medida en que su negocio se desarrolla en un mundo globalizado.</p>
+              <p class="lead"> Capture información de su cliente o su empresa desde cualquier parte del mundo y guárdela de forma segura para después acceder a ella fácilmente. Es muy importante que sus datos estén protegidos para conservar la privacidad de sus clientes, y también, que se encuentren debidamente respaldados para asegurar que la información importante nunca se pierda. La base de datos debe tener la capacidad de crecer a la medida en que su negocio se desarrolla en un mundo globalizado.</p>
             </div>
             <div class="col-md-5 col-md-pull-7">
               <img class="featurette-image img-responsive center-block" src="http://previews.123rf.com/images/limbi007/limbi0071305/limbi007130500150/19890965-Computadoras-port-tiles-conectadas-con-la-base-de-datos-sobre-el-fondo-blanco--Foto-de-archivo.jpg" alt="Generic placeholder image">
@@ -113,13 +114,14 @@
       <div id="containerIn">
         <div class="row">
             <div class="scrollblock block-info" style="color: {{ctrl.colorText || 'black'}}; background-color: {{ctrl.colorBackground || 'white'}}">
-                 <h2 class="featurette-heading">Enviar mensaje</h2> 
+                 <h2 class="featurette-heading">Enviar correo</h2> 
                 <br /><br />
                 <div class="col-md-12" ng-controller="EmailFormController as emCtl">
-                    <p>Contacto :  Jonás Nahúm Jiménez García</p> <br />
-                    <p>Cel :  452 165 22 47</p> <br />
-                    <p>Uruapan Michoacan México</p> <br />
-                    <p><a href="https://www.facebook.com/paginasweburuapan">Facebook</a></p> <br /><br />
+                    <p>Contacto :  Jonás Nahúm Jiménez García</p> 
+                    <p>Email: jonasnahum@gmail.com</p> 
+                    <p>Cel :  (045) 452 165 22 47</p>
+                    <p>Uruapan Michoacan México</p>
+                    <p><a href="https://www.facebook.com/paginasweburuapan" target="_blank">Facebook</a></p> <br /><br />
                     <form name="mailForm" id="myForm" ng-submit="mailForm.$valid && emCtl.send()" novalidate>
                         <fieldset ng-attr-disabled="{{emCtl.waiting || undefined}}">
                             <div class="form-group">
@@ -175,7 +177,6 @@
 
       <!-- FOOTER -->
       <footer>
-        <p class="pull-right"><a href="#">Ir arriba</a></p>
         <p>&copy; 2016 UruapanWeb.</p>
       </footer>
 
