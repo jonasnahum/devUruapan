@@ -35,7 +35,7 @@
 
             $http({
                 method: 'POST',
-                url: constants.server + '/correo/',//la varialble constante viene de routes.
+                url: '/correo',//la varialble constante viene de routes.
                 data: model,
                 beforeSend: function() {
                     model.waiting = true;
