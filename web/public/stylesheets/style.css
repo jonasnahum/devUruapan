@@ -11,3 +11,97 @@ a {
     color: crimson;
     font-family: 'Roboto', sans-serif;
 }
+
+
+.intro {
+    margin-top: -5%;
+    margin-left: -15%;
+    display: table;
+    width: 130%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url("http://www.encabezadostwitter.com/panel/encabezados/cuadros-azules.jpg")no-repeat bottom center scroll;
+    background-color: #000;
+    background-color: rgb(35, 82, 124);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+     -o-background-size: cover;
+     
+}
+
+.intro .intro-body {
+    /*padding-top: 140px;*/
+    padding-top: 140px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.intro .intro-body .brand-heading {
+    font-size: 40px;
+}
+
+.intro .intro-body .intro-text {
+    font-size: 18px;
+}
+
+@media(min-width:768px) {
+    .intro {
+        height: 100%;
+        padding: 0;
+    }
+
+    .intro .intro-body .brand-heading {
+        font-size: 100px;
+    }
+
+    .intro .intro-body .intro-text {
+        font-size: 26px;
+    }
+}
+
+@-webkit-keyframes pulse {    
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes pulse {    
+    0% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -moz-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.content-section {
+    padding-top: 100px;
+}
+
+@media(min-width:767px) {
+    .content-section {
+        padding-top: 250px;
+    }
+}
