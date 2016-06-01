@@ -4,14 +4,23 @@ var router = express.Router();
 
 /* GET home page. */
 router.post('/', function(req, res, next) {
-
+  console.log("entro-----------------------------")
         var transporter = nodemailer.createTransport({
             service: 'Mailgun',
             auth: {
+              /*
+                user: 'postmaster@sandboxb7d3126ecba24dcabf57d1a8dcec11cb.mailgun.org',
+                pass:'postmaster@sandboxb7d3126ecba24dcabf57d1a8dcec11cb.mailgun.org'
+                */
+                /* ultima que funcionó
+                user: 'postmaster@sandboxf9a06959cc684146bef93b1b8250ac9b.mailgun.org',
+                pass:'52e52c9ac4f8dcc9468b236345d0559b'
+                */
                 user: process.env.EMAIL_USER,
                 pass: process.env.EMAIL_PASS
             }
         });
+    console.log(nodemailer);
          var html = '<p><b>Nombre:</b> ' + req.body.name +'</p>'+
                '<p><b>Email:</b> ' + req.body.email +'</p>'+
                '<p><b>Teléfono:</b> ' + req.body.phone +'</p>'+
