@@ -4,7 +4,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.post('/', function(req, res, next) {
-    
+
         var transporter = nodemailer.createTransport({
             service: 'Mailgun',
             auth: {
@@ -29,6 +29,7 @@ router.post('/', function(req, res, next) {
                 console.log(error);
                 return next(error);
             }
+            console.log("exito");
             res.json({ success: true });
         });
 });
