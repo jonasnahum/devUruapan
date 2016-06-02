@@ -1,8 +1,8 @@
 (function() {
     var app = angular.module('app');
 
-    app.controller('EmailFormController', [ '$http', '$scope', 'constants',
-                                           function( $http, $scope, constants) {
+    app.controller('EmailFormController', [ '$http', '$scope',
+                                           function( $http, $scope) {
 
         var model = this;
         model.to = "jonasnahum@gmail.com";//a quién le va llegar el correo
