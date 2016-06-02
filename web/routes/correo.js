@@ -4,7 +4,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.post('/', function(req, res, next) {
-  console.log("entro-----------------------------")
+
         var transporter = nodemailer.createTransport({
             service: 'Mailgun',
             auth: {
@@ -34,7 +34,6 @@ router.post('/', function(req, res, next) {
 
             }
         });
-    console.log(nodemailer);
          var html = '<p><b>Nombre:</b> ' + req.body.name +'</p>'+
                '<p><b>Email:</b> ' + req.body.email +'</p>'+
                '<p><b>Teléfono:</b> ' + req.body.phone +'</p>'+
@@ -46,7 +45,6 @@ router.post('/', function(req, res, next) {
             text: req.body.message,
             html: html
         };
-    console.log(mailOptions);
         transporter.sendMail(mailOptions, function(error, info){
             if(error){
                 console.log(error);

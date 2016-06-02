@@ -29,7 +29,7 @@ a {
     -moz-background-size: cover;
     background-size: cover;
      -o-background-size: cover;
-     
+
 }
 
 .intro .intro-body {
@@ -62,7 +62,7 @@ a {
     }
 }
 
-@-webkit-keyframes pulse {    
+@-webkit-keyframes pulse {
     0% {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -79,7 +79,7 @@ a {
     }
 }
 
-@-moz-keyframes pulse {    
+@-moz-keyframes pulse {
     0% {
         -moz-transform: scale(1);
         transform: scale(1);
