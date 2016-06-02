@@ -20,8 +20,8 @@ router.post('/', function(req, res, next) {
                 user: "postmaster@sandboxb7d3126ecba24dcabf57d1a8dcec11cb.mailgun.org",
                 pass: "30c5e730f5a5ef584ffcc8a0dccd079f"
                 */
-                user: process.env.EMAIL_USER,
-                pass: process.env.EMAIL_PASS
+                user: process.env.EMAIL_USER || 'postmaster@sandboxf9a06959cc684146bef93b1b8250ac9b.mailgun.org',
+                pass: process.env.EMAIL_PASS || '52e52c9ac4f8dcc9468b236345d0559b'
             }
         });
     console.log(nodemailer);
