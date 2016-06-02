@@ -29,9 +29,9 @@ router.post('/', function(req, res, next) {
                 pass: process.env.EMAIL_PASS
 */
 
-                user: process.env.EMAIL_USER || 'postmaster@sandboxf9a06959cc684146bef93b1b8250ac9b.mailgun.org',
-                pass: process.env.EMAIL_PASS || '52e52c9ac4f8dcc9468b236345d0559b'
-                
+                user: process.env.EMAIL_USER,
+                pass: process.env.EMAIL_PASS
+
             }
         });
     console.log(nodemailer);
