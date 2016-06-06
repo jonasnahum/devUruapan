@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var correo = require('./routes/correo');
 var users = require('./routes/users');
-
+var verificationCode = require('./routes/googleb2611c4a9ab5f284.html');
 var app = express();
 
 // view engine setup
@@ -26,6 +26,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/correo', correo);
 app.use('/users', users);
+app.use('/googleb2611c4a9ab5f284.html ', verificationCode);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

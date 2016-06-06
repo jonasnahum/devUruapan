@@ -1,3 +1,6 @@
+// para que funcione como nodemon webpack --progress --colors --watch
+// para ejecutar, solo escribir webpack
+const webpack = require('webpack');
  module.exports = {
      context: __dirname,
      entry: './public/angular/bin/main.js',
@@ -5,13 +8,6 @@
          path: __dirname + '/public/angular/bundle',
          filename: 'main.min.js'
      },
-     module: {
-        loaders: [{
-            test: /\.js/,
-            exclude: /node_modules/,
-            include: __dirname + '/public/angular/src',
-        }]
-    },
     plugins: [
         new webpack.optimize.UglifyJsPlugin({
             compress: {
